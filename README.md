@@ -3,4 +3,5 @@
 This repository contains some of my projects in Python and C++:
 
 - [Project 1](Translator/)
-- [Project 2](Text\to\Speech/)
+- [Project 2](Text-to-Speech/)
+
