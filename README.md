@@ -1,4 +1,4 @@
-# Collection of my Python projects
+# Collection of my projects
 
 This repository contains some of my projects in Python and C++:
 
