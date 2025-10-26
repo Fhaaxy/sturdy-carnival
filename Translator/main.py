@@ -1,22 +1,29 @@
 from deep_translator import GoogleTranslator
 
-print("Inserisci la lingua da tradudurre: en, it, fr, de, es...")
-source = input()
+print("Welcome to the Translator!")
 
-print("Inserisci la lingua in cui tradurre: en, it, fr, de, es...")
-target = input()
+source = input("Select the language to be translated (en, it, fr, de, es...): ").lower()
+target = input("Select the language to translate into (en, it, fr, de, es...): ").lower()
 
-print("Vuoi tradurre da un testo o da un file? (1 per testo, 2 per file)")
-choise = input()
+while True:
+    choice = input("Do you want to translate from a text or a file? (1 for text, 2 for file): ")
 
-if choise == "1":   
-    print("Inserisci il testo da tradurre:")
-    txt = input()
-    translation = GoogleTranslator(source = source,  target = target).translate(txt)
+    if choice == "1":
+        txt = input("Insert the text to be translated: ")
+        translation = GoogleTranslator(source=source, target=target).translate(txt)
+        break
 
-elif choise == "2":     
-    print("Inserisci il path del file da tradurre:")
-    path = input()
-    translation = GoogleTranslator(source = source,  target = target).translate_file(path)
+    elif choice == "2":
+        while True:
+            path = input("Insert the file path: ")
+            try:
+                translation = GoogleTranslator(source=source, target=target).translate_file(path)
+                break
+            except FileNotFoundError:
+                print("File not found. Please try again.")
+        break
 
-print("Traduzione:\n" + translation)
+    else:
+        print("Invalid choice. Please select 1 or 2.")
+
+print("\nTranslation:\n" + translation)

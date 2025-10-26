@@ -15,7 +15,7 @@ while True:
                 break
             except FileNotFoundError:
                 print("File not found. Please try again.")
-        break
+                file_path = input("Enter file path: ")
     elif choice == 'n':
         txt = input("Enter text: ")
         break
