@@ -9,7 +9,7 @@ struct Employer {
 };
 int main()
 {
-   Employer company[N];
+   Employer company[N], temp;
    int i, j;
    float sum = 0, avg,  max, min;
 
@@ -26,15 +26,15 @@ int main()
        cin>>company[i].salary;
    }
 
-for(i = 0; i < N - 1; i++)
+for(j = 0; j < N-1; j++)
     {
-        for(j = 0; j < N - i - 1; j++)
+        for(i = 0; i < N-1; i++)
         {
-            if(company[j].salary < company[j + 1].salary)
+            if(company[i].salary < company[i+1].salary)
             {
-                Employer temp = company[j];
-                company[j] = company[j + 1];
-                company[j + 1] = temp;
+                temp = company[i];
+                company[i] = company[i+1];
+                company[i+1] = temp;
             }
         }
     }
@@ -49,17 +49,17 @@ for(i = 0; i < N - 1; i++)
         cout << "Salary: " << company[i].salary << endl;
     }
 
-   for(i=0; i<N; i++)
+   for(i = 0; i < N; i++)
    {
        sum = sum + company[i].salary;
    }
    avg=sum/N;
-   cout<<"Average salary of employers: "<<avg<<endl;
+   cout<<"Average salary of employers:"<<avg<<endl;
 
     max=company[0].salary;
-    for(i=1;i<N;i++)
+    for(i = 1;i < N; i++)
     {
-        if(company[i].salary>max)
+        if(company[i].salary > max)
         {
             max=company[i].salary;
         }
@@ -67,9 +67,9 @@ for(i = 0; i < N - 1; i++)
     cout<<"Maximum salary: "<<max<<endl;
   
     min=company[0].salary;
-    for(i=1;i<N;i++)
+    for(i = 1; i < N; i++)
     {
-        if(company[i].salary<min)
+        if(company[i].salary < min)
         {
             min=company[i].salary;
         }
