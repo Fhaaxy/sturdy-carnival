@@ -5,6 +5,7 @@ print("Welcome to the Translator!")
 source = input("Select the language to be translated (en, it, fr, de, es...): ").lower()
 target = input("Select the language to translate into (en, it, fr, de, es...): ").lower()
 
+#Get user input for text or file translation
 while True:
     choice = input("Do you want to translate from a text or a file? (1 for text, 2 for file): ")
 
@@ -25,5 +26,6 @@ while True:
 
     else:
         print("Invalid choice. Please select 1 or 2.")
+
 
 print("\nTranslation:\n" + translation)

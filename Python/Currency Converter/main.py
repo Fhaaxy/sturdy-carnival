@@ -2,6 +2,7 @@ import requests
 
 print("Currency Converter")
 
+#10 most important currencies in the world and their exchange rates to USD
 rates = {
     "USD": 1.00,
     "EUR": 0.93,
@@ -19,6 +20,8 @@ rates = {
 amount = 0.0
 converted_amount = 0.0
 
+
+#Get user input for currency conversion
 while True:
     choice1 = input ("What currency do you want to convert? (USD, EUR, GBP, JPY, CAD, CHF, AUD, CNY, NZD, SGD, INR): ").upper()
                     
@@ -28,7 +31,7 @@ while True:
         print("Invalid currency. Please choose from USD, EUR, GBP, JPY, CAD, CHF, AUD, CNY, NZD, SGD, INR.")
 
 
-
+#Get user input for amount to convert
 while True:
     amount = input("Enter the amount you want to convert: ")
 
@@ -39,7 +42,7 @@ while True:
         print("Invalid amount. Please enter a numeric value (Use dot for decimal numbers).")
 
 
-
+#Get user input for currency to convert to
 while True:
     choice2 = input ("What currency do you want to convert to? (USD, EUR, GBP, JPY, CAD, CHF, AUD, CNY, NZD, SGD, INR): ").upper()
                     
@@ -49,6 +52,7 @@ while True:
         print("Invalid currency. Please choose from USD, EUR, GBP, JPY, CAD, CHF, AUD, CNY, NZD, SGD, INR.")
 
 
+#Convert currency
 converted_amount = (amount / rates[choice1]) * (rates[choice2])
 
 print("The converted amout from", choice1, "to", choice2, "is:", converted_amount, choice2)

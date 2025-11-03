@@ -4,6 +4,7 @@ print("Welcome to the File Reader Program!")
 type_of_file = input("Please enter the type of file you want to read (txt/html/java/py/pdf): ").strip().lower()
 file_path = input("Please enter the path to the file: ").strip()
 
+#Read and display file content
 while True:
     try:
         if type_of_file == "txt" or type_of_file == "html" or type_of_file == "java" or type_of_file == "py":
