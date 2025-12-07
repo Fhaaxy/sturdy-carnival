@@ -1,4 +1,4 @@
-# --- PYTHON ---
+# PYTHON
 __pycache__/
 *.pyc
 *.pyo
@@ -9,7 +9,7 @@ venv/
 ENV/
 env/
 
-# --- C++ Build Artifacts ---
+# C++ Build Artifacts
 *.o
 *.obj
 *.so
@@ -20,15 +20,21 @@ env/
 *.lib
 *.tmp
 
-# --- VS CODE ---
+C++/**/*
+!C++/**/*.cpp
+!C++/**/*.h
+!C++/**/*.md
+!C++/**/*.txt
+
+# VS CODE
 .vscode/
 .history/
 
-# --- OS FILES ---
+# OS FILES
 .DS_Store
 Thumbs.db
 
-# --- DEV CONTAINERS & DOCKER ---
+# DEV CONTAINERS & DOCKER
 .devcontainer/target/
 docker-volume/
 *.pid
