@@ -18,7 +18,7 @@ int main()
             cin >> A[i][j];
         }
 
-        cout << "Enter constant term[" << i << "]: ";
+        cout << "Enter constant term [" << i << "]: ";
         cin >> c[i];
     }
 
