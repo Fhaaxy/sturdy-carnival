@@ -18,6 +18,5 @@
         "source=${localWorkspaceFolder},target=/workspace,type=bind"
     ],
     "workspaceFolder": "/workspace",
-    
-    "postCreateCommand": "python3 -m venv .venv && . .venv/bin/activate && pip install --upgrade pip && pip install -r python/requirements.txt"
+    "postCreateCommand": "python3 -m venv .venv && . .venv/bin/activate && pip install --upgrade pip && for f in Python/*/requirements.txt; do pip install -r \"$f\"; done"
 }
