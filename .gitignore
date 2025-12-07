@@ -1,2 +1,42 @@
-.venv/
+# --- PYTHON ---
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# --- C++ Build Artifacts ---
+*.o
+*.obj
+*.so
+*.exe
+*.out
+*.a
+*.dll
+*.lib
+*.tmp
+
+# --- VS CODE ---
+.vscode/
+.history/
+
+# --- OS FILES ---
+.DS_Store
+Thumbs.db
+
+# --- DEV CONTAINERS & DOCKER ---
+.devcontainer/target/
+docker-volume/
+*.pid
+*.log
+
+# --- MISC ---
+*.zip
+*.tar
+*.tar.gz
+*.bak
+*.swp
