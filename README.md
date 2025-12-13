@@ -8,6 +8,7 @@ This repository contains some of my projects in Python and C++:
 - [Project 4](Python/File%20Reader/)
 - [Project 5](Python/Currency%20Converter/)
 - [Project 6](C++/Cramer%20Solver/)
+- [Project 7](Python/QR%20Code%20%Generator/)
 
 **Development Environment**  
 This repository contains a pre-configured Dev Container using Docker. When opened in Visual Studio Code with the Dev Containers extension, the development environment is automatically provisioned with:

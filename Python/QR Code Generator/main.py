@@ -1,6 +1,6 @@
 import qrcode
 
-data = input("Insert the url or text to generate QR Code: ")
+data = input("Insert the url QR Code: ").strip()
 
 
 qr = qrcode.QRCode()
