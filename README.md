@@ -4,11 +4,11 @@ This repository contains some of my projects in Python and C++:
 
 - [Project 1](Python/Translator/)
 - [Project 2](Python/Text%20to%20Speech/)
-- [Project 3](C++/Struct%20Employer/)
+- [Project 3](C++/Struct%20Company/)
 - [Project 4](Python/File%20Reader/)
 - [Project 5](Python/Currency%20Converter/)
 - [Project 6](C++/Cramer%20Solver/)
-- [Project 7](Python/QR%20Code%20%Generator/)
+- [Project 7](Python/QR%20Code%20Generator/)
 - [Project 8](Python/Cryptography%20Program/)
 
 **Development Environment**  
