@@ -1,3 +1,4 @@
 codecs
 base64
+morse-talk
 hashlib
